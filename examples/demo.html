@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3轮播</title>
+</head>
+
+<body>
+    <div class="slider" id="slider" style="width:400px;height:200px;margin:0 auto;overflow:hidden"></div>
+    <script type="text/javascript" src="../src/sliderByCss3.js"></script>
+    <script>
+    var target = document.querySelector("#slider");
+    var options = {
+        imgArr: ['http://img.firefoxchina.cn/2016/03/5/201603180831040.jpg', 'http://img.firefoxchina.cn/2016/03/5/201603180858560.jpg',
+            'img/1.jpg',
+            'img/2.jpg'
+        ],
+        dom: target
+    };
+
+    document.addEventListener("DOMContentLoaded", function() {
+        window.slider.config(options);
+    })
+    </script>
+</body>
+
+</html>
